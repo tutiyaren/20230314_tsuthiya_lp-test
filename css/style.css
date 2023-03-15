@@ -38,7 +38,7 @@ header {
     font-family: "Comic Sans MS";
     color: rgb(230, 101, 122);
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 15%;
     font-size: 60px;
 }
@@ -56,7 +56,6 @@ header {
 }
 .header-top-text-foot {
     font-weight: "Comic Sans MS";
-    margin-top: -20px;
 }
 
 /*catch*/
@@ -65,7 +64,7 @@ header {
     font-size: 15px;
 }
 .ttl {
-    margin-top: -10px;
+    
     font-size: 25px;
 }
 
@@ -104,6 +103,7 @@ header {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid rgb(197, 196, 196);
+    padding: 10px 0 ;
 }
 .news-item-icon {
    background-color:rgb(230, 101, 122);
@@ -133,6 +133,10 @@ header {
     width: 100%;
     padding-left: 10%;
     font-size: 20px;
+}
+.about-wrapper-text-top {
+    padding-top: 20px;
+    margin-bottom: 50px;
 }
 .about-wrapper-image {
     text-align: right;
@@ -164,8 +168,7 @@ header {
 .service-grid-box1 {
     grid-row: 1/3;
     grid-column: 1/2;
-    background-color:rgb(172, 42, 120);
-    margin: 0 -50px;
+    background-color:rgb(172, 42, 120); 
 }
 .service-grid-box1-img {
     width: 30%;
@@ -176,6 +179,8 @@ header {
     text-align: center;
     color: white;
     font-size: 25px;
+    padding-bottom: 25px;
+    margin-top: 10px;
 }
 .service-grid-box1-text {
     text-align: center;
@@ -195,6 +200,8 @@ header {
 .service-grid-box2-title {
     color: white;
     font-size: 25px;
+    margin-top: 25px;
+    padding-bottom: 40px;
 }
 
 .service-grid-box2-text {
@@ -214,6 +221,8 @@ header {
 .service-grid-box3-title {
     color: white;
     font-size: 25px;
+    margin-top: 25px;
+    padding-bottom: 40px;
 }
 
 .service-grid-box3-text {
@@ -253,7 +262,7 @@ header {
 }
 .card-top-logo {
     position: absolute;
-    top: -16px;
+    top: 0px;
     border-top-left-radius: 15px;
     background-color:rgb(193, 73, 141);
     padding: 3px 10px;
@@ -265,8 +274,12 @@ header {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+.card-bottom {
+    padding: 40px 0;
+}
 .card-bottom-title {
     font-weight: bold;
+    margin-bottom: 30px;
 }
 .card-bottom-text {
     display: flex;
@@ -334,7 +347,7 @@ footer {
     color: white;
     text-align: center;
     font-size: 35px;
-    padding-top: 70px;
+    padding-top: 130px;
 }
 .footer-top-right {
     background-image: url(../img/interview.png);
@@ -346,7 +359,7 @@ footer {
     color: white;
     text-align: center;
     font-size: 35px;
-    padding-top: 70px;
+    padding-top: 130px;
 }
 /*footer-center*/
 .footer-center {
@@ -358,6 +371,7 @@ footer {
     position: relative;
     padding-bottom: 50px;
     color:rgb(156, 150, 150);
+    padding-top: 30px;
 }
 .footer-center-contact:after {
     content: '';
@@ -372,6 +386,7 @@ footer {
 }
 .footer-center-form {
     text-align: center;
+    margin-top: 30px;
 }
 .footer-center-form-text {
     display: inline-block;
@@ -384,7 +399,7 @@ footer {
     box-shadow: 0 10px rgb(100, 98, 98);
 }
 .email {
-    margin-left: -110px;
+    margin-left: -50px;
     font-size: 40px;
     margin-right: 80px;
 }
@@ -429,15 +444,18 @@ footer {
         margin: 0 auto;
     }
     .service-catch {
-        margin: 0 0 0 auto;
+        margin: 20px 0 15px auto;
         margin-left: 70px;
     }
     .blog-catch {
-        margin: 0 0 0 auto;
+        margin: 20px 0 15px auto;
         margin-left: 100px;
     }
+    .card:first-child {
+        margin-left: -30px;
+    }
     .company-catch {
-        margin: 0 0 0 auto;
+        margin: 20px 0 15px auto;
         margin-left: 140px;
     }
 }
@@ -481,14 +499,18 @@ footer {
     }
     .about-wrapper-text {
         font-size: 10px;
+        width: 150%;
     }
     .about-wrapper-img {
         margin-right: 10px;
         width: 60%;
     }
     .service-catch {
-        margin: 0 0 0 auto;
+        margin: 15px 0 10px auto;
         margin-left: 20px;
+    }
+    .service-grid {
+        grid-template-rows: 150px 150px;
     }
     .service-grid-box1 {
         padding-right: 20px;
@@ -511,9 +533,10 @@ footer {
         font-size: 8px;
     }
     .service-grid-box2-text {
-        font-size: 5px;
-        width: 60%;
+        font-size: 1px;
+        width: 70%;
         margin: 0 auto;
+        margin-top: -30px;
     }
     .service-grid-box3 {
         padding-right: 20px;
@@ -526,8 +549,9 @@ footer {
     }
     .service-grid-box3-text {
         font-size: 5px;
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
+        margin-top: -30px;
     }
     .cards {
         margin: 0 0 0 auto;
@@ -541,7 +565,10 @@ footer {
     }
     .card-top-logo {
         font-size: 5px;
-        margin-top: 16px;
+        margin-top: 0;
+    }
+    .card-bottom {
+        padding: 20px 0 ;
     }
     .card-bottom-title {
         font-size: 10px;
@@ -551,7 +578,7 @@ footer {
         font-size: 1px;
     }
     .blog-catch {
-        margin: 0 0 0 auto;
+        margin: 15px 0 10px auto;
         margin-left: 25px;
     }
     .company-row-title, .company-row-text {
@@ -561,7 +588,7 @@ footer {
         width: 80%;
     }
     .company-catch {
-        margin: 0 0 0 auto;
+        margin: 15px 0 10px auto;
         margin-left: 50px;
     }
     .footer-center-contact {
@@ -573,5 +600,17 @@ footer {
     }
     .email {
         padding-left: 70px;
+    }
+}
+
+@media screen and(max-width: 1000px){
+    
+    .service-grid-box1-text {
+        width: 80%;
+        padding: 0 20px;
+        display: inline-block;
+    }
+    .email {
+        margin-left: 20px;
     }
 }
